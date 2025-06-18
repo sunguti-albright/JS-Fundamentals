@@ -7,12 +7,14 @@ You are not allowed to use var
 You can use only two console.log
 You must use a loop (while, for, etc.)*/
 
-const x = process.argv[2];
-
-if (Number.isNaN(x) || " ") {
+const x = Number(process.argv[2]);
+if (Number.isNaN(x)) {
     console.log("Missing number of occurrences")
 } else {
-    for (let i = 0; i < x; i++) {
+    const value = Math.abs(x);
+    for (let i = 0; i < value; i++) {
         console.log("C is fun") 
     }
 }
+
+
