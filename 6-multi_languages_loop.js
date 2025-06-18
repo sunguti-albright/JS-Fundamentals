@@ -16,6 +16,6 @@ const languages = [
     "JavaScript is amazing"
 ]
 
-for (const iterator of languages) {
-    console.log(iterator)
+for (const language of languages) {
+    console.log(language)
 }
